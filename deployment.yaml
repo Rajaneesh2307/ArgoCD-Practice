@@ -17,3 +17,6 @@ spec:
           image: yembulururajaneesh/tetrisgame:v2
           ports:
             - containerPort: 3000
+          resources:
+            requests:
+              cpu: "100m"

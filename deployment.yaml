@@ -16,4 +16,4 @@ spec:
         - name: mycontainer
           image: yembulururajaneesh/tetrisgame:v2
           ports:
-            - containerPort: 80
+            - containerPort: 3000

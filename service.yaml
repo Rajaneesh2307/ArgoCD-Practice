@@ -8,5 +8,5 @@ spec:
     app: tetrisgame   
   ports:
     - port: 8080      
-      targetPort: 80   
+      targetPort: 3000   
       nodePort: 31767  

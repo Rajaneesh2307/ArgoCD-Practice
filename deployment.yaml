@@ -19,8 +19,13 @@ spec:
             - containerPort: 3000
           resources:
             requests:
-              cpu: "100m"
-              memory: 250Mi
+              cpu: "100m"      # baseline CPU request
+              memory: 250Mi    # baseline memory request
             limits:
-              cpu: "250m"
-              memory: 500Mi
+              cpu: "250m"      # max CPU limit
+              memory: 500Mi    # max memory limit
+          envFrom:
+            - configMapRef:
+                name: myconfigmap
+            - secretRef:
+                name: mysecret
